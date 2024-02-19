@@ -160,17 +160,17 @@
     <div class="w-[50%]">
         <!-- select seat -->
         <div>
-            <h1 class="font-bold text-2xl ml-28">Select Your Seat</h1>
-            <hr class="ml-28 mr-10">
+            <h1 class="font-bold mb-3 text-2xl">Select Your Seat</h1>
+            <hr>
             <div class="flex flex-row justify-between w-[90%]">
                 <div>
-                    <h1 class="flex ml-28"><img src="images/seat-gray.png" alt="">Available</h1>
+                    <h1 class="flex m-2"><img src="images/seat-gray.png" alt="">Available</h1>
                 </div>
                 <div>
-                    <h1 class="flex"><img src="images/seat-green-filled.png" alt="">Selected</h1>
+                    <h1 class="flex m-2"><img src="images/seat-green-filled.png" alt="">Selected</h1>
                 </div>
             </div>
-            <hr class="ml-28 mr-10">
+            <hr>
             <div class="flex justify-end mt-5 pr-28 mb-6"><button id="wheel" class="wheel-circle text-end "><img
                         src="images/Group 56.png" alt=""></button>
             </div>
@@ -178,34 +178,49 @@
     
         <!-- seat number-->
         <div>
-            <div class="flex justify-center gap-16 my-1 w-full">
+            <div class="flex justify-center mb-8 gap-16 my-1 w-full">
                 <button id="A" class="kbd w-20">A</button>
                 <button id="B" class="kbd w-20">B</button>
                 <button id="C" class="kbd w-20">C</button>
                 <button id="D" class="kbd w-20">D</button>
     
             </div>
-            <div class="flex justify-center gap-16 my-1 w-full">
+            <div class="flex justify-center mb-8 gap-16 my-1 w-full">
                 <button id="E" class="kbd w-20">E</button>
                 <button id="F" class="kbd w-20">F</button>
                 <button id="G" class="kbd w-20">G</button>
                 <button id="H" class="kbd w-20">H</button>
     
             </div>
-            <div class="flex justify-center gap-16 my-1 w-full">
+            <div class="flex justify-center mb-8 gap-16 my-1 w-full">
                 <button id="I" class="kbd w-20">I</button>
                 <button id="J" class="kbd w-20">J</button>
                 <button id="K" class="kbd w-20">K</button>
                 <button id="L" class="kbd w-20">L</button>
     
             </div>
-            <div class="flex justify-center gap-16 my-1 w-full">
+            <div class="flex justify-center mb-8 gap-16 my-1 w-full">
                 <button id="M" class="kbd w-20">M</button>
                 <button id="N" class="kbd w-20">N</button>
                 <button id="0" class="kbd w-20">O</button>
                 <button id="P" class="kbd w-20">P</button>
     
             </div>
+            <div class="flex justify-center mb-8 gap-16 my-1 w-full">
+                <button id="M1" class="kbd w-20">M1</button>
+                <button id="N1" class="kbd w-20">N1</button>
+                <button id="01" class="kbd w-20">O1</button>
+                <button id="P1" class="kbd w-20">P1</button>
+    
+            </div>
+            <div class="flex justify-center gap-16 my-1 w-full">
+                <button id="M2" class="kbd w-20">M2</button>
+                <button id="N2" class="kbd w-20">N2</button>
+                <button id="02" class="kbd w-20">O2</button>
+                <button id="P2" class="kbd w-20">P2</button>
+    
+            </div>
+            
     
     
         </div>
@@ -227,9 +242,13 @@
         </div>
         <hr>
         <br>
+        <!-- to show selected seat from javascript -->
+        <div id="selectedSeat">
+
+        </div>
         <hr>
         <div class="flex justify-between">
-            <p>Total Price</p>
+            <p class="text-lg font-semibold">Total Price</p>
             <p>BDT <span>0</span></p>
         </div>
 <!-- coupon apply -->
@@ -238,13 +257,37 @@
             <button class=" p-1 rounded-lg bg-lime-500 font-semibold mb-10 text-lg w-20">Apply</button>
            <!-- grand total -->
             <div class="flex justify-between">
-                <p>Grand Total</p>
+                <p class="text-lg font-semibold">Grand Total</p>
                 <p>BDT <span>0</span></p>
             </div>
         </div>
+        <!-- passenger basic info -->
+        <!-- name -->
+        <div class="mt-4">
+            <p class="text-lg font-semibold">Passenger Name*</p>
+            <input type="text" class="Enter-name w-80 mt-1 outline-1 outline-lime-500 border rounded-xl p-2"
+                placeholder="Enter Your Name">
+        </div>
+        <!-- Phone NUmber -->
+        <div class="mt-4">
+            <p class="text-lg font-semibold">Phone Number*</p>
+            <input type="number" class="Enter-phone w-80 mt-1 outline-1 outline-lime-500 border rounded-xl p-2"
+                placeholder="Enter Your Phone Number">
+        </div>
+        <!-- mail id -->
+        <div class="mt-4">
+            <p class="text-lg font-semibold">Email ID</p>
+            <input type="text" class="Enter-mail w-80 mt-1 outline-1 outline-lime-500 border rounded-xl p-2"
+                placeholder="Enter Your Mail">
+        </div>
+
+        <!-- Next button -->
+        <button class=" p-1 rounded-lg bg-lime-500 w-80 font-semibold mb-10 mt-4 h-12 text-lg">Next</button>
 </div>
 </div>
 </section>
+
+
 
    
     <script src="bus.js"></script>
