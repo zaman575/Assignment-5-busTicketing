@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- nav bar -->
-    <section class="container mx-auto mt-8 flex justify-between">
+    <nav class="container mx-auto mt-8 flex justify-between">
             <div class="flex">
                 <h1 class="cursor-pointer justify-between">Z-ticket</h1>
             </div>
@@ -27,7 +27,7 @@
 
      <div><button class="btn btn-outline btn-success font-semibold text-lg w-24 bg-lime-50">Bus<img src="images/bus-icon.png" alt="bus icon"></button>
     </div>
-    </section>
+    </nav>
  <!-- bus bg -->
     <section class="container mx-auto bg-slate-400 mt-8 h-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner.png)] bg-center bg-cover bg-no-repeat rounded-lg">
         <div class="text-center flex flex-col">
@@ -146,7 +146,7 @@
     <!--  coupon set right tside  seat price -->
     <div class="flex justify-center items-center flex-col">
         <img class="w-12" src="images/fare.png" alt="">
-        <p class=" text-3xl font-extrabold text-center pr-8 pl-8">550tk</p>
+        <p class=" text-3xl font-extrabold text-center pr-8 pl-8"><span id="ticket-price">550</span>tk</p>
         <p class=" opacity-80 text-lg text-center pr-5">per seat</p>
     </div>
 </div>
@@ -154,7 +154,7 @@
     </section>
 
     <!-- seat allocation -->
-<section class="container mx-auto mb-10">
+    <section class="container mx-auto mb-10">
     <!-- left+right div -->
 <div class="flex">
     <!-- left side of bus seat allocation -->
@@ -245,12 +245,14 @@
         <br>
         <!-- to show selected seat from javascript -->
         <div id="selectedSeat">
-
+            <p id="seat-name"></p>
+            <p id="seat-class" ></p>
+            <p id="seat-price" ></p>
         </div>
         <hr>
         <div class="flex justify-between">
             <p class="text-lg font-semibold">Total Price</p>
-            <p>BDT <span>0</span></p>
+            <p>BDT <span id="total-price">0</span></p>
         </div>
 <!-- coupon apply -->
         <div>
@@ -283,24 +285,24 @@
         </div>
 
         <!-- Next button -->
-        <button class=" p-1 rounded-lg bg-lime-500 w-80 font-semibold mb-10 mt-4 h-12 text-lg">Next</button>
+        <button id="nextBtn" class=" p-1 rounded-lg bg-lime-500 w-80 font-semibold mb-10 mt-4 h-12 text-lg">Next</button>
 </div>
 </div>
         </section>
         <!-- footer -->
-        <section class="container mx-auto mb-10 bg-black">
-        <div class="flex justify-evenly">
-            <div>
-            <h1 class="text-2xl font-bold mt-7 text-gray-50">Z-ticket</h1>
-            <h2 class="text-md opacity-80 text-gray-50">Z-ticketing is a digital platform <br> to reach your destination safley</h2>
-            </div>
-            <div>
-                <h1 class="text-2xl font-bold mt-7 text-gray-50">Download your app</h1>
-                <div class="flex gap-2">
-                    <img class="w-10" src="images/playstore.png" alt="">
-                    <p class="text-lg cursor-pointer font-semibold text-gray-50">GET IT ON <br>Google Play</p>
-                </div>
-            </div>
+    <section class="container mx-auto mb-10 bg-black">
+    <div class="flex justify-evenly">
+        <div>
+        <h1 class="text-2xl font-bold mt-7 text-gray-50">Z-ticket</h1>
+        <h2 class="text-md opacity-80 text-gray-50">Z-ticketing is a digital platform <br> to reach your destination safley</h2>
+        </div>
+        <div>
+            <h1 class="text-2xl font-bold mt-7 text-gray-50">Download your app</h1>
+            <div class="flex gap-2">
+                <img class="w-10" src="images/playstore.png" alt="">
+                <p class="text-lg cursor-pointer font-semibold text-gray-50">GET IT ON <br>Google Play</p>
+        </div>
+        </div>
         </div>
         <hr class="m-20 border-dotted ">
         <!-- footer last part -->
