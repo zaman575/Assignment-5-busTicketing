@@ -28,7 +28,6 @@ for (const btn of allBtn) {
     });
 }
 
-
 nextBtn.addEventListener("click", function () {
     hidden.style.display = "block"; // Show the hidden section
 });
